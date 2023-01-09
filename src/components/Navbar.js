@@ -7,10 +7,9 @@ const Navbar = () => {
 
   return (
     <nav>
-      <a href="/">FaithTasks</a>
+      <a href="/">God Tasks</a>
       <div>
         <a href="/daily">Daily</a>
-        <a href="/">Tasks</a>
         <a href="/about">About</a>
       </div>
     </nav>

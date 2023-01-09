@@ -1,36 +1,33 @@
 import React from 'react';
 // import the style sheet
 import '../style.css';
-import SearchBar from '../components/SeachBar';
+import tasks from '../data/tasks.json';
 
 const Daily = () => {
-//   const [today, setToday] = useState(new Date());
-//   const [practice, setPractice] = useState({});
+  const category = tasks[Object.keys(tasks)[Math.floor(Math.random() * Object.keys(tasks).length)]]
 
-//   useEffect(() => {
-//     // Fetch the spiritual practice for today
-//     async function fetchPractice() {
-//       const response = await fetch(`/api/daily-practice/${today.getDay()}`);
-//       const data = await response.json();
-//       setPractice(data);
-//     }
-
-//     fetchPractice();
-//   }, [today]);
-    let practice = {
-        title: "Meditate",
-        description: "Sit quietly and focus on your breath for 10 minutes."
-    }
+  const color = category.color
+  const task = category.tasks[Math.floor(Math.random() * category.tasks.length)]
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
+  // Create a random date Object from 2020-01-01 to today
+  const dateObj = new Date(new Date().setDate(new Date().getDate() - Math.floor(Math.random() * 365)));
+  const dateArr = dateObj.toLocaleDateString('en-us', options).split(', ')
+  const date = `${dateArr[1]}, ${dateArr[2]}`
 
   return (
     <div className="daily">
-      <h1>{(new Date()).toDateString()}</h1>
-      <h2>{practice.title}</h2>
-      <p>{practice.description}</p>
-      <button onClick={() => console.log('I did it!')}>I did it!</button>
-      <SearchBar />
+      {task ? (
+        <>
+          <h1>{date}</h1>
+          <h2 style={{ color: color }}>{task.title}</h2>
+          <p>{task.description}</p>
+          <p><strong>{task.verse}</strong></p>
+          <button onClick={() => window.location.reload()}>Refresh</button>
+        </>
+      ) : (
+        <p>Loading...</p>
+      )}
     </div>
-
   );
 };
 

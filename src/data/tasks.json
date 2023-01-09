@@ -1,0 +1,177 @@
+{
+    "Scripture" : {
+        "color": "#8B4513",
+        "tasks" : [
+            {
+                "title": "Read the Bible",
+                "description": "Read the Bible for at least 30 minutes",
+                "verse": "Psalm 119:105"
+            },
+            {
+                "title": "Study a Passage",
+                "description": "Spend time studying a passage of the Bible in depth",
+                "verse": "Jeremiah 29:11-13"
+            },
+            {
+                "title": "Memorize a Verse",
+                "description": "Memorize a verse of Scripture",
+                "verse": "Psalm 119:11"
+            },
+            {
+                "title": "Read a Book of the Bible",
+                "description": "Read a book of the Bible in one sitting",
+                "verse": "Psalm 119:105"
+            },
+            {
+                "title": "Read a Chapter of the Bible",
+                "description": "Read a chapter of the Bible in one sitting",
+                "verse": "Psalm 119:105"
+            },
+            {
+                "title": "Read a Psalm",
+                "description": "Read a Psalm in one sitting",
+                "verse": "Psalm 119:105"
+            },
+            {
+                "title": "Read a Proverb",
+                "description": "Read a Proverb in one sitting",
+                "verse": "Psalm 119:105"
+            },
+            {
+                "title": "Read a Gospel",
+                "description": "Read a Gospel in one sitting",
+                "verse": "Psalm 119:105"
+            },
+            {
+                "title": "Read a New Testament Letter",
+                "description": "Read a New Testament Letter in one sitting",
+                "verse": "Psalm 119:105"
+            }
+        ]
+    },
+    "Prayer" : {
+        "color": "#FFD700",
+        "tasks" : [
+            {
+                "title": "Morning Devotions",
+                "description": "Spend time in prayer and Bible reading as part of your morning routine",
+                "verse": "Psalm 5:3"
+            },
+            {
+                "title": "Intercessory Prayer",
+                "description": "Pray for others and their needs",
+                "verse": "1 Timothy 2:1-2"
+            },
+            {
+                "title": "Prayer Walk",
+                "description": "Go for a walk and pray as you go",
+                "verse": "Psalm 23:4"
+            }
+        ]
+    },
+    "Fasting" : {
+        "color": "#FFA500",
+        "tasks" : [
+            {
+                "title": "Fasting",
+                "description": "Fast for a period of time",
+                "verse": "Matthew 6:16-18"
+            },
+            {
+                "title": "Fasting and Prayer",
+                "description": "Fast and pray for a period of time",
+                "verse": "Matthew 6:16-18"
+            },
+            {
+                "title": "Fasting and Scripture",
+                "description": "Fast and spend time in Scripture for a period of time",
+                "verse": "Matthew 6:16-18"
+            }
+        ]
+    },
+    "Serving" : {
+        "color": "#FF4500",
+        "tasks" : [
+            {
+                "title": "Serve Others",
+                "description": "Serve others in some way",
+                "verse": "Matthew 25:40"
+            },
+            {
+                "title": "Volunteer",
+                "description": "Volunteer at a local charity or church",
+                "verse": "1 Peter 4:10"
+            },
+            {
+                "title": "Give to Charity",
+                "description": "Give to a charity",
+                "verse": "2 Corinthians 9:7"
+            },
+            {
+                "title": "Give to Church",
+                "description": "Give to your local church",
+                "verse": "1 Corinthians 16:2"
+            },
+            {
+                "title": "Give to Missions",
+                "description": "Give to a missions organization",
+                "verse": "2 Corinthians 9:7"
+            },
+            {
+                "title": "Give to a Family in Need",
+                "description": "Give to a family in need",
+                "verse": "1 Timothy 6:18"
+            }
+        ]
+    },
+    "Meditation" : {
+        "color": "#FF0000",
+        "tasks" : [
+            {
+                "title": "Meditate",
+                "description": "Meditate on the Word of God",
+                "verse": "Psalm 1:2"
+            },
+            {
+                "title": "Meditate on Scripture",
+                "description": "Meditate on a passage of Scripture",
+                "verse": "Psalm 1:2"
+            },
+            {
+                "title": "Meditate on God",
+                "description": "Meditate on God",
+                "verse": "Psalm 1:2"
+            },
+            {
+                "title": "Meditate on the Gospel",
+                "description": "Meditate on the Gospel",
+                "verse": "Psalm 1:2"
+            }
+        ]
+    },
+    "Fellowship" : {
+        "color": "#FF69B4",
+        "tasks": [
+            {
+                "title": "Fellowship with Friends",
+                "description": "Fellowship with friends",
+                "verse": "Hebrews 10:24-25"
+            },
+            {
+                "title": "Fellowship with Family",
+                "description": "Fellowship with family",
+                "verse": "Hebrews 10:24-25"
+            },
+            {
+                "title": "Fellowship with Church",
+                "description": "Fellowship with your local church",
+                "verse": "Hebrews 10:24-25"
+            },
+            {
+                "title": "Fellowship with God",
+                "description": "Fellowship with God",
+                "verse": "Hebrews 10:24-25"
+            }
+        ]
+    }
+}
