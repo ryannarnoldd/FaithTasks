@@ -5,8 +5,11 @@ import '../style.css';
 import { fetchDailyTask } from '../Utils.js';
 
 const Daily = () => {
+  const { date, task } = fetchDailyTask();
+
+
   return (
-    <Task task={ fetchDailyTask() } refresh={false} />
+    <Task date={date} task={ task } refresh={false} />
   );
 };
 

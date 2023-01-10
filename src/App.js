@@ -8,7 +8,7 @@ import {
 import Navbar from './components/Navbar';
 import Daily from './pages/Daily';
 import Random from './pages/Random';
-import Home from './pages/Home';
+// import Home from './pages/Home';
 import About from './pages/About';
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
       <Navbar />
       <div className="container">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Random />} />
           <Route path="daily" element={<Daily />} />
           <Route path="random" element={<Random />} />
           <Route path="about" element={<About />} />

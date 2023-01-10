@@ -5,8 +5,11 @@ import '../style.css';
 import { fetchRandomTask } from '../Utils.js';
 
 const Random = () => {
+  const { date, task } = fetchRandomTask();
+
+
   return (
-    <Task task={ fetchRandomTask() } refresh={true} />
+    <Task date={date} task={ task } refresh={true} />
   );
 };
 

@@ -1,14 +1,14 @@
 import React from 'react';
 // import the style sheet
 import '../style.css';
+import { getDateString } from '../Utils';
 
-const Task = ({ task: { title, description, verse }, refresh }) => {
-    console.log(refresh)
-
+const Task = ({ date, task: { title, description, verse }, refresh }) => {
   return (
     <div className="task">
         {title && description && verse ? (
         <>
+            <h1>{getDateString(date)}</h1>
             <h2>{title}</h2>
             <p>{description}</p>
             <p><strong>{verse}</strong></p>
