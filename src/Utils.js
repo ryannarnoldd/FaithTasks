@@ -26,3 +26,10 @@ export const fetchDailyTask = () => {
         task: history[getCurrentDate()] || { title: 'There are no tasks to do today.', description: '', verse: '' }
     }
 }
+
+export const fetchTask = (date) => {
+    return {
+        date: date,
+        task: history[date] || { title: 'This task could not be found.', description: '', verse: '' }
+    }
+}

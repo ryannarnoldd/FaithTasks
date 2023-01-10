@@ -3,7 +3,10 @@ import React from 'react';
 import '../style.css';
 import { getDateString } from '../Utils';
 
-const Task = ({ date, task: { title, description, verse }, refresh }) => {
+
+const TaskBox = ({ date, task: { title, description, verse }, refresh }) => {
+  console.log(date, title, description, verse);
+  
   return (
     <div className="task">
         {title && description && verse ? (
@@ -22,4 +25,4 @@ const Task = ({ date, task: { title, description, verse }, refresh }) => {
   );
 };
 
-export default Task;
+export default TaskBox;
