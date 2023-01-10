@@ -15,7 +15,7 @@ function App() {
 
 
   return (
-    <Router basename={'FaithTasks'}>
+    <Router basename={'/FaithTasks'}>
       <Navbar />
       <div className="container">
         <Routes>

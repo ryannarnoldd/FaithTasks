@@ -14,7 +14,7 @@ const Task = ({ date, task: { title, description, verse }, refresh }) => {
             <p><strong>{verse}</strong></p>
             {refresh 
                 ? ( <button onClick={() => window.location.reload(false)}>Refresh</button>) 
-                : ( <p>The next task will be released at <strong>Midnight</strong></p> )
+                : ( <button onClick={() => window.location.reload(false)}>Share!</button>)
             }   
         </>
         ) : ( <h2>There are no tasks to do today.</h2> )}

@@ -9,7 +9,13 @@ const Random = () => {
 
 
   return (
-    <Task date={date} task={ task } refresh={true} />
+    <div style={{ textAlign: 'center', padding: '5px' }}>
+      <h3> Get a random task (that was used in the past) here!</h3> 
+      
+      <label for="date">Date: </label>
+      <input type="date" id="date" name="date" />
+      <Task date={date} task={ task } refresh={true} />
+    </div>
   );
 };
 
