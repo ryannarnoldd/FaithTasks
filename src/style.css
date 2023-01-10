@@ -21,6 +21,7 @@ code {
   margin-top: 50px;
 }
 
+
 .task {
   display: flex;
   flex-direction: column;
@@ -39,18 +40,21 @@ code {
   font-size: 2em;
   font-weight: bold;
   margin: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .task h2 {
   font-size: 1.5em;
   font-weight: bold;
-  margin: 10px 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .task p {
   font-size: 1.2em;
-  margin: 20px 0;
-  padding: 0 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .task button {
