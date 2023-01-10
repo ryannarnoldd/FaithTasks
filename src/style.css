@@ -21,7 +21,7 @@ code {
   margin-top: 50px;
 }
 
-.daily {
+.task {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,25 +35,25 @@ code {
   margin-top: 50px;
 }
 
-.daily h1 {
+.task h1 {
   font-size: 2em;
   font-weight: bold;
   margin: 0;
 }
 
-.daily h2 {
+.task h2 {
   font-size: 1.5em;
   font-weight: bold;
   margin: 10px 0;
 }
 
-.daily p {
+.task p {
   font-size: 1.2em;
   margin: 20px 0;
   padding: 0 20px;
 }
 
-.daily button {
+.task button {
   background-color: #4caf50;
   color: #ffffff;
   font-size: 1em;
@@ -64,7 +64,7 @@ code {
   transition: background-color 0.2s;
 }
 
-.daily button:hover {
+.task button:hover {
   background-color: #43a047;
 }
 
