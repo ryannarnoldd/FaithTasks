@@ -1,7 +1,7 @@
 import React from 'react';
 import TaskBox from '../components/TaskBox';
 // import the style sheet
-import '../style.css';
+import '../style.scss';
 import { fetchDailyTask } from '../Utils.js';
 
 const Daily = () => {

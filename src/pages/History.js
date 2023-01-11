@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import TaskBox from '../components/TaskBox';
 // import the style sheet
-import '../style.css';
+import '../style.scss';
 import { fetchRandomTask, fetchTask, getCurrentDate } from '../Utils.js';
 
 const History = () => {

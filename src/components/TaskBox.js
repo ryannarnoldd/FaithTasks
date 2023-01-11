@@ -1,6 +1,6 @@
 import React from 'react';
 // import the style sheet
-import '../style.css';
+import '../style.scss';
 import { getDateString } from '../Utils';
 
 
