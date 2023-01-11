@@ -4,8 +4,15 @@ import '../style.css';
 import { getDateString } from '../Utils';
 
 
-const TaskBox = ({ date, task: { title, description, verse }, refresh }) => {
-  console.log(date, title, description, verse);
+const TaskBox = ({ date, task: { title, description, verse }}) => {
+  function copyToClipboard() {
+    // copy link to clipboard.
+    navigator.clipboard.writeText(window.location.href)
+    document.getElementById("copied").style.display = "inline";
+    setTimeout(() => {
+        document.getElementById("copied").style.display = "none";
+    }, 1000);
+  }
   
   return (
     <div className="task">
@@ -15,10 +22,9 @@ const TaskBox = ({ date, task: { title, description, verse }, refresh }) => {
             <h2>{title}</h2>
             <p>{description}</p>
             <p><strong>{verse}</strong></p>
-            {refresh 
-                ? ( <button onClick={() => window.location.reload(false)}>Refresh</button>) 
-                : ( <button onClick={() => window.location.reload(false)}>Share!</button>)
-            }   
+            
+            <button onClick={ copyToClipboard }>Share!</button>
+            <span id="copied" style={{display: 'none'}}>Copied!</span>
         </>
         ) : ( <h2>There are no tasks to do today.</h2> )}
     </div>

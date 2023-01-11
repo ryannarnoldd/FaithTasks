@@ -7,7 +7,7 @@ import {
 
 import Navbar from './components/Navbar';
 import Daily from './pages/Daily';
-import Task from './pages/Task';
+import History from './pages/History';
 import Home from './pages/Home';
 import About from './pages/About';
 
@@ -22,11 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/daily" element={<Daily />} />
           <Route path="/about" element={<About />} />
-          <Route path="/task/:date?" element={ <Task /> } />
-
-          {/* <Route path="/:year" element={<h1 style={{ color: 'red' }}>Year</h1>} />
-          <Route path="/:year/:month" element={<h1 style={{ color: 'red' }}>Month</h1>} /> */}
-          {/* <Route path="/:year/:month/:day" element={/> */}
+          <Route path="/history/:date?" element={ <History /> } />
         </Routes>
       </div>
     </Router>
