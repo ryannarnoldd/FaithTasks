@@ -36,9 +36,11 @@ const History = () => {
     <div style={{ textAlign: 'center', padding: '5px', justifyContent: 'center' }}>
       <h3> Get a random task (that was used in the past) here!</h3> 
       
+      <TaskBox date={date} task={ task } />
+      <br></br>
       <label for="date">Date: </label>
       <input type="date" id="date" name="date" min="2020-01-01" max={getCurrentDate()}/> <button onClick={setTask}>Get Task</button>
-      <TaskBox date={date} task={ task } />
+
     </div>
   );
 };

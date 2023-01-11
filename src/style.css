@@ -19,6 +19,7 @@ code {
   height: 100vh;
   background-color: #f5f5f5;
   margin-top: 50px;
+  overflow: hidden;
 }
 
 
@@ -86,7 +87,7 @@ nav {
 }
 
 nav a {
-  color: #000000;
+  color: #111111;
   text-decoration: none;
   font-size: 1.75em;
   padding: 0 15px;
@@ -138,4 +139,29 @@ nav ul li a {
   position: absolute;
   bottom: 500px;
   opacity: 75%
+}
+
+#verse {
+  /* get rid of the underline */
+  text-decoration: none;
+  color: #0000CD;
+}
+
+#verse:hover {
+  /* get rid of the underline */
+  text-decoration: none;
+  color: #0000CD;
+}
+
+#verse:active {
+  /* get rid of the underline */
+  text-decoration: none;
+  color: #0000CD;
+}
+
+#verse:visited {
+  /* get rid of the underline */
+  text-decoration: none;
+  /* brown */
+  color: #0000CD;
 }

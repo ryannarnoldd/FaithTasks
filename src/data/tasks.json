@@ -2,7 +2,7 @@
     "1" : {
         "title": "Read the Bible",
         "description": "Read the Bible for at least 30 minutes",
-        "verse": "Psalm 119:105"
+        "verse": "Psalms 119:105"
     },
     "2" : {
         "title": "Study a Passage",
@@ -12,42 +12,42 @@
     "3" : {
         "title": "Memorize a Verse",
         "description": "Memorize a verse of Scripture",
-        "verse": "Psalm 119:11"
+        "verse": "Psalms 119:11"
     },
     "4" : {
         "title": "Read a Book of the Bible",
         "description": "Read a book of the Bible in one sitting",
-        "verse": "Psalm 119:105"
+        "verse": "Psalms 119:105"
     },
     "5" : {
         "title": "Read a Chapter of the Bible",
         "description": "Read a chapter of the Bible in one sitting",
-        "verse": "Psalm 119:105"
+        "verse": "Psalms 119:105"
     },
     "6" : {
         "title": "Read a Psalm",
         "description": "Read a Psalm in one sitting",
-        "verse": "Psalm 119:105"
+        "verse": "Psalms 119:105"
     },
     "7" : {
         "title": "Read a Proverb",
         "description": "Read a Proverb in one sitting",
-        "verse": "Psalm 119:105"
+        "verse": "Psalms 119:105"
     },
     "8" : {
         "title": "Read a Gospel",
         "description": "Read a Gospel in one sitting",
-        "verse": "Psalm 119:105"
+        "verse": "Psalms 119:105"
     },
     "9" : {
         "title": "Read a New Testament Letter",
         "description": "Read a New Testament Letter in one sitting",
-        "verse": "Psalm 119:105"
+        "verse": "Psalms 119:105"
     },
     "10" : {
         "title": "Morning Devotions",
         "description": "Spend time in prayer and Bible reading as part of your morning routine",
-        "verse": "Psalm 5:3"
+        "verse": "Psalms 5:3"
     },
     "11" : {
         "title": "Intercessory Prayer",
@@ -57,7 +57,7 @@
     "12" : {
         "title": "Prayer Walk",
         "description": "Go for a walk and pray as you go",
-        "verse": "Psalm 23:4"
+        "verse": "Psalms 23:4"
     },
     "13" : {
         "title": "Fasting",
@@ -107,22 +107,22 @@
     "22" : {
         "title": "Meditate",
         "description": "Meditate on the Word of God",
-        "verse": "Psalm 1:2"
+        "verse": "Psalms 1:2"
     },
     "23" : {
         "title": "Meditate on Scripture",
         "description": "Meditate on a passage of Scripture",
-        "verse": "Psalm 1:2"
+        "verse": "Psalms 1:2"
     },
     "24" : {
         "title": "Meditate on God",
         "description": "Meditate on God",
-        "verse": "Psalm 1:2"
+        "verse": "Psalms 1:2"
     },
     "25" : {
         "title": "Meditate on the Gospel",
         "description": "Meditate on the Gospel",
-        "verse": "Psalm 1:2"
+        "verse": "Psalms 1:2"
     },
     "26" : {
         "title": "Fellowship with Friends",
