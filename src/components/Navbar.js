@@ -4,11 +4,11 @@ const Navbar = () => {
 
   return (
     <nav>
-      <a href="/FaithTasks/">Faith Tasks</a>
+      <a href="/">Faith Tasks</a>
       <div className="links">
-        <a href="/FaithTasks/daily">Daily</a>
-        <a href="/FaithTasks/history">History</a>
-        <a href="/FaithTasks/about">About</a>
+        <a href="daily">Daily</a>
+        <a href="history">History</a>
+        <a href="about">About</a>
       </div>
     </nav>
   );
