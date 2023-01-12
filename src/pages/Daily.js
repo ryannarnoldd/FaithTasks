@@ -6,9 +6,6 @@ import { fetchDailyTask } from '../Utils.js';
 
 const Daily = () => {
   const { date, task } = fetchDailyTask();
-  const { image, takeScreenshot } = useScreenshot();
-
-  
 
   return (
     <div>
