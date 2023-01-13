@@ -19,7 +19,7 @@ const History = () => {
   const setTask = () => {
     date = document.getElementById('date').value;
     if (date && "2023-01-01" <= date && date <= getCurrentDate()) {
-      window.location.href = `${date}`;
+      window.location.href = `/history/${date}`;
     }
     else {
       // Current bad way of handling errors.
@@ -38,7 +38,7 @@ const History = () => {
 
       <h3> Or, get a task from a specific date! </h3> 
       <div style={{display: 'flex', flexDirection: 'row'}}>
-        <input type="date" name="date" min="2020-01-01" max={getCurrentDate()} onBlur={setTask} style={{fontSize: '20px'}} />
+        <input type="date" id='date' name="date" min="2020-01-01" max={getCurrentDate()} style={{fontSize: '20px'}} />
         <button onClick={setTask} style={{fontSize: '20px', marginLeft: '10px'}}>Get Task</button>
       </div>
       <br />
