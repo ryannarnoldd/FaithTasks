@@ -30,7 +30,6 @@ const History = () => {
     
     <div className='content'>
       <h3> Get a random task (used in the past) here!</h3> 
-      <br />
       
       <TaskBox date={date} task={ task } />
       <br />

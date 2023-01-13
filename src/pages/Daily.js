@@ -9,7 +9,6 @@ const Daily = () => {
   return (
     <div className='content'>
       <h3> Find the daily task updated every midnight! </h3>
-      <br />
       <TaskBox date={date} task={ task } />
     </div>
   );
