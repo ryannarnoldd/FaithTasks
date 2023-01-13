@@ -6,8 +6,10 @@ const Home = () => {
 
   return (
     <div className="home" style={{ textAlign: 'center', padding: '5px' }}>
-        <h1>Home</h1>
-        <h2>This is a website that helps you do your daily tasks serving God and others!</h2>
+        <h1>Daily faith-tasks!</h1>
+        <h3>Go to the <a href="/daily">Daily</a> page to get the daily task!</h3>
+        <h3>Go to the <a href="/history">History</a> page to get a random task from the past!</h3>
+        <h3>Go to the <a href="/about">About</a> page to learn more about this website!</h3>
     </div>
   );
 };

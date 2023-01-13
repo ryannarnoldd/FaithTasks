@@ -40,6 +40,7 @@ const History = () => {
       <br></br>
       <label for="date">Date: </label>
       <input type="date" id="date" name="date" min="2020-01-01" max={getCurrentDate()}/> <button onClick={setTask}>Get Task</button>
+      <h6>Works any date from 2023-01-01 to today!</h6>
 
     </div>
   );

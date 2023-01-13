@@ -131,3 +131,14 @@ nav {
     &:hover { color: #000080; }
   }
 }
+
+.home {
+  h3 {
+    a {
+      color: #000080;
+      text-decoration: none;
+
+      &:hover { color: #0000CD; }
+    }
+  }
+}
