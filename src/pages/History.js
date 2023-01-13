@@ -35,9 +35,15 @@ const History = () => {
       <TaskBox date={date} task={ task } />
       <br />
 
-      <input type="date" name="date" min="2020-01-01" max={getCurrentDate()} onBlur={setTask} style={{fontSize: '20px'}} />
+
+
+      <h3> Or, get a task from a specific date! </h3> 
+      <div style={{display: 'flex', flexDirection: 'row'}}>
+        <input type="date" name="date" min="2020-01-01" max={getCurrentDate()} onBlur={setTask} style={{fontSize: '20px'}} />
+        <button onClick={setTask} style={{fontSize: '20px', marginLeft: '10px'}}>Get Task</button>
+      </div>
       <br />
-      <h6>Works any date from 2023-01-01 to today!</h6>
+      <h5>Works any date from 01-01-2023 to today!</h5>
 
     </div>
   );
