@@ -19,7 +19,7 @@ function App() {
       <Navbar />
       <div className="container">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="*" exact={true} element={<Home />} />
           <Route path="/daily" element={<Daily />} />
           <Route path="/about" element={<About />} />
           <Route path="/history/:date?" element={ <History /> } />

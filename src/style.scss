@@ -1,5 +1,7 @@
+* { margin: 0; padding: 0;}
+
 body {
-  margin: 0;
+  // margin: 0;
   // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   //   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   //   sans-serif;
@@ -11,56 +13,51 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 50px);
   background-color: #f5f5f5;
-  margin-top: 50px;
+  // margin-top: 50px;
   overflow: hidden;
+  text-align: center;
+  // overflow-y: hidden;
+  // overflow-x: hidden;
 }
 
 .task {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 350px;
+  margin: 0 auto;
+  width: 95%;
   height: 350px;
   background-color: #ffffff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  // margin-top: 10px;
-
   h1 {
-    font-size: 2.5em;
+    font-size: 2.75em;
     font-weight: bold;
-    margin: 0;
+    margin-top: 5px;
   }
-
-  h2 {
-    font-size: 1.5em;
-  }
-
-  p {
-    font-size: 1.2em;
-  }
+  h2 { font-size: 1.8em; }
+  p { font-size: 1.2em; }
 
   button {
+    margin-top: 5px;
+    height: 40px;
+    width: 90px;
     background-color: #4caf50;
     color: #ffffff;
     font-size: 1em;
-    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.2s;
-
     &:hover { background-color: #43a047; }
   }
 
   a {
     text-decoration: none;
-    color: #0000CD;
-  
-    &:hover { color: #0000aa; }
+    color: #8b4513;
+    &:hover { color: #cd853f; }
   }
 }
 
@@ -68,14 +65,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
-  background-color: #ffffff;
+  background-color: #fcfcfc;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
 
   a {
     color: #111111;
@@ -83,7 +74,6 @@ nav {
     font-size: 1.75em;
     padding: 0 15px;
     line-height: 50px;
-
     &:hover {color: #4caf50;}
   }
 
@@ -97,13 +87,11 @@ nav {
     left: 0;
     width: 200px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-
     li {
       width: 100%;
-
       a {
         display: block;
-        padding: 10px 15px;
+        padding: 5px 10px;
         color: #000000;
         text-decoration: none;
       }
@@ -115,12 +103,6 @@ nav {
   font-size: 1em;
   &:hover { color: Blue; }
   &:active { color: rgb(0, 0, 150); }
-}
-
-.task span {
-  position: absolute;
-  bottom: 500px;
-  opacity: 75%
 }
 
 .about {
@@ -139,6 +121,25 @@ nav {
       text-decoration: none;
 
       &:hover { color: #0000CD; }
+    }
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+
+  h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+
+    a {
+      color: #0000CD;
+      text-decoration: none;
+
+      &:hover { color: #000080; }
     }
   }
 }
