@@ -55,9 +55,11 @@ const Task = ({ date, task: { title, verse }}) => {
             <br />
 
             <br />
+
+            <br />
             
             {/* Return Home */}
-            <button id="share" onClick={ () => window.location.href = "/" }>Return Home</button>
+            <button id="share" onClick={ () => window.location.href = "/" }>Home</button>
           </>
         )
       }
