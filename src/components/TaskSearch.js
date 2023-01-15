@@ -10,6 +10,7 @@ const TaskSearch = () => {
     const checkDate = () => {
         date = document.getElementById('date').value;
         setDisabled(false ? (date && START_DATE <= date && date < getCurrentDate()) : true);
+        console.log(disabled);
     }
 
     const setTask = () => {
@@ -20,7 +21,7 @@ const TaskSearch = () => {
   return (
     <div className='taskSearch'>
         <input type="date" id='date' onChange={checkDate} min={START_DATE} max={getCurrentDate()}/>
-        <button id='getTask' onClick={setTask} disabled={disabled}>Get Task</button>
+        <button id='getTask' onClick={setTask}>Get Task</button>
     </div>
   );
 };
