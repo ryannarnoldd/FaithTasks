@@ -143,3 +143,17 @@ nav {
     }
   }
 }
+
+.taskSearch {
+  display: flex;
+  flex-direction: row;
+
+  input {
+      font-size: 20px;
+  }
+
+  button {
+      font-size: 20px;
+      margin-left: 10px;
+  }
+}

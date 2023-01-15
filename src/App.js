@@ -6,10 +6,13 @@ import {
 
 
 import Navbar from './components/Navbar';
-import Daily from './pages/Daily';
-import History from './pages/History';
+
 import Home from './pages/Home';
+import Task from './pages/Task';
 import About from './pages/About';
+
+// import Daily from './pages/Daily';
+// import History from './pages/History';
 
 function App() {
 
@@ -20,9 +23,11 @@ function App() {
       <div className="container">
         <Routes>
           <Route path="*" exact={true} element={<Home />} />
-          <Route path="/daily" element={<Daily />} />
+          <Route path="/task/:date" element={ <Task /> } />
           <Route path="/about" element={<About />} />
-          <Route path="/history/:date?" element={ <History /> } />
+
+          {/* <Route path="/daily" element={<Daily />} />
+          <Route path="/history/:date?" element={ <History /> } /> */}
         </Routes>
       </div>
     </Router>

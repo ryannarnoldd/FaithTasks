@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import TaskBox from '../components/TaskBox';
+import TaskBox from '../components/Task';
 import '../style.scss';
 import { fetchRandomTask, fetchTask, getCurrentDate } from '../Utils.js';
 

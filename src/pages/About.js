@@ -6,7 +6,7 @@ const About = () => {
 
   return (
     <div className='content' style={{na: '20px'}}>
-      <h3 style={{fontSize: '30px'}}>About!</h3>
+      <h3 style={{fontSize: '30px'}}>Who We Are?</h3>
 
       <h3>We provide daily faith-based tasks to help strengthen your walk with God</h3>
 

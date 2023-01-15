@@ -1,5 +1,5 @@
 import React from 'react';
-import TaskBox from '../components/TaskBox';
+import TaskBox from '../components/Task';
 import '../style.scss';
 import { fetchDailyTask } from '../Utils.js';
 
