@@ -1,21 +1,27 @@
 import '../style.scss';
 import { getCurrentDate } from '../Utils.js';
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 
 const TaskSearch = () => {
-    const [ disabled, setDisabled ] = useState(true);
-    const START_DATE = "2020-01-01";
+    // const [ disabled, setDisabled ] = useState(true);
+    const START_DATE = "2023-01-01";
     let date;
+
+    const validateDate = (date) => (date && START_DATE <= date && date < getCurrentDate())
 
     const checkDate = () => {
         date = document.getElementById('date').value;
-        setDisabled(false ? (date && START_DATE <= date && date < getCurrentDate()) : true);
-        console.log(disabled);
+        // setDisabled(false ? (validateDate(date)) : true);
     }
 
     const setTask = () => {
         date = document.getElementById('date').value;
-        if (date) { window.location.href = `/task/${date}`; }
+        if (validateDate(date)) { 
+            window.location.href = `/task/${date}`; 
+        }
+        else {
+            window.location.href = `/`;
+        }
     }
 
   return (
