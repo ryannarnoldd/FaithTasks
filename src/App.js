@@ -8,9 +8,9 @@ import {
 import Navbar from './components/Navbar';
 
 import Home from './pages/Home';
-import Task from './pages/Task';
 import About from './pages/About';
 
+// import Task from './pages/Task';
 // import Daily from './pages/Daily';
 // import History from './pages/History';
 
@@ -23,7 +23,7 @@ function App() {
       <div className="container">
         <Routes>
           <Route path="*" exact={true} element={<Home />} />
-          <Route path="/task/:date" element={ <Task /> } />
+          {/* <Route path="/task/:date" element={ <Task /> } /> */}
           <Route path="/about" element={<About />} />
 
           {/* <Route path="/daily" element={<Daily />} />
