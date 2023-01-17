@@ -30,11 +30,11 @@ const Task = ({ date, task: { title, verse }}) => {
 
       <br /> <br /> <br /> <br />
 
-      <h2 style={{textAlign: 'center'}}>
+      <h2 style={{textAlign: 'center', height: '2em', display: 'flex', flexWrap: 'wrap'}}>
         <strong>{title}</strong>
       </h2>
       
-      <br /> <br />
+      <br /> <br /> <br />
       
       <h2>
         <a id="verse" href={formatLink(verse)} target="_blank" rel="noreferrer">
@@ -42,7 +42,7 @@ const Task = ({ date, task: { title, verse }}) => {
         </a>
       </h2> 
 
-      <br />
+      <br /> 
       
       <button id="share" onClick={ copyToClipboard }>Share!</button>
       
