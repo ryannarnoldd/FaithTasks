@@ -3,14 +3,25 @@ import { getDateString } from '../Utils';
 import '../style.scss';
 
 const Task = ({ date, task: { title, verse }}) => {
+  const questions = [
+    "What was your main takeway from the task?",
+    "What does this task teach us about God?",
+    "What are some things you struggled with during this task?",
+    "What are some things you will do differently next time you complete this task?",
+    "How can you apply this task to your everyday life?",
+    "What are some things you are grateful for after completing this task?",
+    "What are some things you wish to improve upon after completing this task?",
+    "What is something that stood out to you during this task?",
+    "What are some things you will remember from this task?",
+    "What are some things you learned from this task that you can apply to other areas of your life?"
+  ]
+  const randomQuestion = questions[Math.floor(Math.random() * questions.length)];
+
   const dateString = getDateString(date);
 
-  // use values if data object with date exists in local storage.
-
-  var localData = localStorage.getItem("data");
-  localData = localData ? JSON.parse(localData) : {};
-  const [complete, setComplete] = useState( localData[date] ? localData[date].complete : false);
-  const [notes, setNotes] = useState( localData[date] ? localData[date].notes : "");
+  const localData = localStorage.getItem("data") ? JSON.parse(localStorage.getItem("data")) : {};
+  const [complete, setComplete] = useState(localData[date]?.complete || false);
+  const [notes, setNotes] = useState(localData[date]?.notes || "");
 
   const [data] = useState(getTotalData(complete, notes));
 
@@ -39,7 +50,7 @@ const Task = ({ date, task: { title, verse }}) => {
     var [ book, chapter, verseNum] = verse.split(/(\d+):/);
     book = book.trim();
     
-    return `https://my.bible.com/bible/116/${books[book]}.${chapter}.${verseNum}.NLT`;
+    return `https://my.bible.com/bible/116/${books[book]}.${chapter}.${verseNum}`;
   }
 
   function copyToClipboard() {
@@ -60,12 +71,14 @@ const Task = ({ date, task: { title, verse }}) => {
     <div className="task">
       <h1>{dateString}</h1>
 
-      <br /> <br /> 
-      <h2 style={{textAlign: 'center', height: '2em', display: 'flex', flexWrap: 'wrap'}}>
-        <strong>{title}</strong>
-      </h2>
+      <br />
+      <br /> 
+
+      <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+        <p>{ title }</p>
+      </div>
       
-      <br /> <br /> <br />
+      <br /> <br />
       
       <h2>
         <a id="verse" href={formatLink(verse)} target="_blank" rel="noreferrer">
@@ -73,12 +86,11 @@ const Task = ({ date, task: { title, verse }}) => {
         </a>
       </h2> 
       
-      <textarea id="notes" placeholder="Notes" value={ notes } onChange={ e => setNotes(e.target.value) } rows="4" cols="25" style={{resize: 'none'}}></textarea>
+      <button id="share" onClick={ copyToClipboard }>Share!</button>
+      <button id="complete" value="false" onClick={ updateComplete } style={{marginTop: '0.5em', backgroundColor: (complete ? 'green' : '#aa0000')}}>{complete ? "Complete" : "Incomplete"}</button>
 
-      <div style={{display: 'inline'}}>
-        <button id="share" onClick={ copyToClipboard }>Share!</button>
-        <button id="complete" value="false" onClick={ updateComplete } style={{marginLeft: '0.5em'}}>{ complete ? "Complete" : "Incomplete" } </button>
-      </div>
+      <textarea id="notes" placeholder={ randomQuestion } value={ notes } onChange={ e => setNotes(e.target.value) }></textarea>
+
       
     </div>
   );
