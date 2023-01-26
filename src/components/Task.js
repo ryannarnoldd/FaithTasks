@@ -31,7 +31,7 @@ const Task = ({ date, task: { title, verse }}) => {
   }, [data, date, complete, notes]);
 
   function copyToClipboard() {
-    navigator.clipboard.writeText(window.location.href);
+    navigator.clipboard.writeText(dateString + "\n" + title + "\n\nCheck it out here! " + window.location.href);
     console.log( document.getElementById("share").style.background_color );
 
     document.getElementById("share").innerHTML = "Copied";
