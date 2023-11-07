@@ -67,3 +67,16 @@ export const getRandomQuestion = () => {
 
     return questions[Math.floor(Math.random() * questions.length)];
 }
+
+export const getStreak = () => {
+
+    var dates = JSON.parse(localStorage.getItem("dates"))
+    let keys = Object.keys(dates).reverse()
+
+    var streak = 0;
+    var index = 0;
+
+    while (index < keys.length && dates[keys[index]].complete === true) { streak++; index++; }
+    return streak;
+
+}

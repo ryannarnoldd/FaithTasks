@@ -1,6 +1,7 @@
 import React from 'react';
 import '../style.scss';
 import { useState, useEffect } from 'react';
+import { getStreak } from '../Utils';
 
 const You = () => {
     const [translation, setTranslation] = useState(localStorage.getItem("translation") || 114);
@@ -20,6 +21,11 @@ const You = () => {
                 <option value="59">English Standard Version</option> 
             </select>
         </label>
+
+        <br /> <br />
+
+        {/* Create a section where it sayas the perosn's current streak based on the complete */}
+        <h2>Current Streak: {getStreak()}</h2>
 
     </div>
   );
