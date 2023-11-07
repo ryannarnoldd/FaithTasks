@@ -18,7 +18,10 @@ function getTotalData(date, complete, notes) {
 }
 
 const Task = ({ date, task: { title, verse }}) => {
+  console.log(date);
   const dateString = getDateString(date);
+  // console.log(dateString);
+  
 
   const localData = localStorage.getItem("data") ? JSON.parse(localStorage.getItem("data")) : {};
   const [complete, setComplete] = useState(localData[date]?.complete || false);

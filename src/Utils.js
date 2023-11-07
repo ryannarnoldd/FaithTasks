@@ -1,7 +1,16 @@
 // import tasks from './data/tasks.json';
 import history from './data/history.json';
 
-export const getCurrentDate = () => new Date().toLocaleString("en-CA", {timeZone: "America/New_York"}).split(',')[0];
+export const getCurrentDate = () => {
+    // Give me the current date in the format of YYYY-MM-DD. (make sure  to pad the month and day with a 0 if it's less than 10)
+    var date = new Date();
+    var getYear = date.toLocaleString("default", { year: "numeric" });
+    var getMonth = date.toLocaleString("default", { month: "2-digit" });
+    var getDay = date.toLocaleString("default", { day: "2-digit" });
+
+    return getYear + "-" + getMonth + "-" + getDay;
+    
+}
 
 export const getDateString = (date) => {
     const [year, month, day] = date.split('-')
