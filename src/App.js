@@ -9,6 +9,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import History from './pages/History';
 import About from './pages/About';
+import You from './pages/You';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="*" exact={true} element={<Home />} />
           <Route path="/history" element={ <History /> } />
           <Route path="/about" element={<About />} />
+          <Route path="/you" element={<You />} />
         </Routes>
       </div>
     </Router>

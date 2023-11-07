@@ -3,7 +3,7 @@ import { getDateString, formatLink, getRandomQuestion } from '../Utils.js';
 import '../style.scss';
 
 function getTotalData(date, complete, notes) {
-  var localData = localStorage.getItem("data");
+  var localData = localStorage.getItem("dates");
   localData = localData ? JSON.parse(localData) : {};
 
   var newData = { [date]: {
@@ -17,21 +17,18 @@ function getTotalData(date, complete, notes) {
   };
 }
 
-const Task = ({ date, task: { title, verse }}) => {
+const Task = ({ date, task: { title, verse, question }}) => {
   console.log(date);
   const dateString = getDateString(date);
-  // console.log(dateString);
-  
 
-  const localData = localStorage.getItem("data") ? JSON.parse(localStorage.getItem("data")) : {};
+  const localData = localStorage.getItem("dates") ? JSON.parse(localStorage.getItem("dates")) : {};
   const [complete, setComplete] = useState(localData[date]?.complete || false);
   const [notes, setNotes] = useState(localData[date]?.notes || "");
 
-  const [data] = useState(getTotalData(complete, notes));
 
   useEffect(() => {
-    localStorage.setItem("data", JSON.stringify(getTotalData(date, complete, notes)));
-  }, [data, date, complete, notes]);
+    localStorage.setItem("dates", JSON.stringify(getTotalData(date, complete, notes)));
+  }, [date, complete, notes]);
 
   function copyToClipboard() {
     navigator.clipboard.writeText(dateString + "\n" + title + "\n\nCheck it out here! " + window.location.href);
@@ -40,7 +37,6 @@ const Task = ({ date, task: { title, verse }}) => {
     document.getElementById("share").innerHTML = "Copied";
     setTimeout(function() { document.getElementById("share").innerHTML = "Share!"; }, 1000);
   }
-
   function updateComplete() {
     setComplete(!complete);
     document.getElementById("complete").innerHTML = complete ? "Incomplete" : "Complete";
@@ -63,7 +59,7 @@ const Task = ({ date, task: { title, verse }}) => {
       <button id="share" onClick={ copyToClipboard }>Share!</button>
       <button id="complete" value="false" onClick={ updateComplete } style={{marginTop: '0.5em', backgroundColor: (complete ? 'green' : '#aa0000')}}>{complete ? "Complete" : "Incomplete"}</button>
 
-      <textarea id="notes" placeholder={ getRandomQuestion() } value={ notes } onChange={ e => setNotes(e.target.value) }></textarea>
+      <textarea id="notes" placeholder={ question || getRandomQuestion() } value={ notes } onChange={(e) => setNotes(e.target.value)}></textarea>
       
     </div>
   );

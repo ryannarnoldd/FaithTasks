@@ -6,6 +6,8 @@ import { fetchRandomTask } from '../Utils.js';
 const History = () => {
   var randomTask = fetchRandomTask();
 
+  console.log("fwefwef");
+
   return (
     <div className='content'>
       <TaskBox date={ randomTask.date } task={ randomTask.task }/>
