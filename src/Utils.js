@@ -73,10 +73,18 @@ export const getStreak = () => {
     var dates = JSON.parse(localStorage.getItem("dates"))
     let keys = Object.keys(dates).reverse()
 
-    var streak = 0;
-    var index = 0;
-
-    while (index < keys.length && dates[keys[index]].complete === true) { streak++; index++; }
+    let streak = 0;
+    let index = 0;
+    
+    while (index < keys.length) {
+        if (dates[keys[index]] && dates[keys[index]].complete === true) {
+            streak++;
+            index++;
+        } else {
+            break; // Exit the loop if 'complete' is not 'true' or key doesn't exist.
+        }
+    }
+    
     return streak;
 
 }
