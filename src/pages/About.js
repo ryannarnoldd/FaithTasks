@@ -6,21 +6,21 @@ const About = () => {
 
   return (
     <div className='content' style={{na: '20px'}}>
-      <h3 style={{fontSize: '30px'}}>Who We Are?</h3>
+      <h2>Welcome to My Journey!</h2>
 
-      <h3>We provide daily faith-based tasks to help strengthen your walk with God</h3>
+      <br></br>
 
-      <h3>Our tasks are simple and easy to incorporate into daily life, but also meaningful and impactful.</h3>
+      <h3>Hello, I'm Ryan Arnold, and currently a participant in the Disney College Program, and I'm passionate about spreading faith and positivity to all those I meet.</h3>
+
+      <h3>I'm also dedicated to fostering faith and values. My mission is to encourage others to strengthen their walk with God and live a purposeful, faith-filled life in all that we do.</h3>
+
+      <h3>Through daily faith-based tasks and experiences, I'm working to make help a difference and inspire those around me. </h3>
         
-      <h3>From scripture, serving, praying, and meditating, our tasks will deepen your relationship with God.</h3>
+      <h3>From Scripture, serving, praying, and meditating, my aim is to deepen our connection with God! </h3>
 
-      <h3>We also have a <a href="https://discord.gg/your-server-link" class="btn">Discord community</a> to share thoughts and struggles with our daily tasks. <br />We would love to have you join us!</h3>
+      <h3>If you have any questions, feedback, or just want to connect, feel free to reach out to me at <a href="mailto:FaithTasks@gmail.com">FaithTasks@email.com</a>.</h3>
 
-      <h3>I attend <a href="https://www.calvarychapelhighland.com/">Calvary Chapel Highland</a>. Click if interested in joining!</h3>
-
-      <h3>If you have any questions or feedback, please don't hesitate to reach out at <a href="mailto:FaithTasks@gmail.com">FaithTasks@gmail.com</a></h3>
-
-      <h3>Follow us on <a href="https://www.instagram.com/faithtasks">Instagram</a> for daily updates!</h3>
+      <h3>Stay updated with my journey by following me on <a href="https://www.instagram.com/FaithTasks">Instagram</a>. Let's share inspiration and spread positivity daily!</h3>
 
     </div>
   );
