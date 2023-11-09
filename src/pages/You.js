@@ -8,13 +8,7 @@ const You = () => {
 
     useEffect(() => {
         localStorage.setItem("translation", translation);
-    }, [translation]);
-
-    var dates = localStorage.getItem("dates")
-    dates = dates.replace(/"/g, '').replace(/,/g, '\n').replace(/{/g, '').replace(/}/g, '')
-    dates = dates.replace(/true/g, '✅').replace(/false/g, '❌')
-    
-
+    }, [translation]);    
 
   return (
     <div className='you'>
@@ -30,14 +24,10 @@ const You = () => {
 
         <br /> <br />
 
-        {/* Create a section where it sayas the perosn's current streak based on the complete */}
-        <h2>Current Streak: {getStreak()}</h2>
-
+        <h1 id="streak">Streak: { getStreak() }</h1>
         <br /> <br />
 
-        {/* print out the dates variable in a nice readable way. */}
 
-        <h2>{ dates = dates.replace(/"/g, '').replace(/,/g, '\n').replace(/{/g, '').replace(/}/g, '') }</h2>
 
         
 
