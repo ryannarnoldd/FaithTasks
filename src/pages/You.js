@@ -10,6 +10,12 @@ const You = () => {
         localStorage.setItem("translation", translation);
     }, [translation]);
 
+    var dates = localStorage.getItem("dates")
+    dates = dates.replace(/"/g, '').replace(/,/g, '\n').replace(/{/g, '').replace(/}/g, '')
+    dates = dates.replace(/true/g, '✅').replace(/false/g, '❌')
+    
+
+
   return (
     <div className='you'>
         <label>Select a translation:
@@ -26,6 +32,16 @@ const You = () => {
 
         {/* Create a section where it sayas the perosn's current streak based on the complete */}
         <h2>Current Streak: {getStreak()}</h2>
+
+        <br /> <br />
+
+        {/* print out the dates variable in a nice readable way. */}
+
+        <h2>{ dates = dates.replace(/"/g, '').replace(/,/g, '\n').replace(/{/g, '').replace(/}/g, '') }</h2>
+
+        
+
+
 
     </div>
   );
