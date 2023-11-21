@@ -10,7 +10,7 @@ const About = () => {
 
       <br></br>
 
-      <h3>Hello, I'm Ryan Arnold, and currently a participant in the Disney College Program, and I'm passionate about spreading faith and positivity to all those I meet.</h3>
+      <h3>Hello, I'm Ryan Arnold, a participant in the Disney College Program and passionate about spreading faith and positivity to those I meet.</h3>
 
       <h3>I'm also dedicated to fostering faith and values. My mission is to encourage others to strengthen their walk with God and live a purposeful, faith-filled life in all that we do.</h3>
 

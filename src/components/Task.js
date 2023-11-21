@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from 'react';
-import { getDateString, formatLink, getRandomQuestion } from '../Utils.js';
+import { getDateString, getVerse, getRandomQuestion } from '../Utils.js';
 import '../style.scss';
 
 function getTotalData(date, complete, notes) {
@@ -18,12 +18,12 @@ function getTotalData(date, complete, notes) {
 }
 
 const Task = ({ date, task: { title, verse, question }}) => {
-  console.log(date);
   const dateString = getDateString(date);
 
   const localData = localStorage.getItem("dates") ? JSON.parse(localStorage.getItem("dates")) : {};
   const [complete, setComplete] = useState(localData[date]?.complete || false);
   const [notes, setNotes] = useState(localData[date]?.notes || "");
+  const [verseText, verseLink] = getVerse(verse);
 
 
   useEffect(() => {
@@ -54,7 +54,7 @@ const Task = ({ date, task: { title, verse, question }}) => {
       
       <br /> <br />
       
-      <h2><a id="verse" href={formatLink(verse)} target="_blank" rel="noreferrer">{verse}</a></h2> 
+      <h2><a id="verse" href={verseLink} target="_blank" rel="noreferrer">{verseText}</a></h2> 
       
       <button id="share" onClick={ copyToClipboard }>Share!</button>
       <button id="complete" value="false" onClick={ updateComplete } style={{marginTop: '0.5em', backgroundColor: (complete ? 'green' : '#aa0000')}}>{complete ? "Complete" : "Incomplete"}</button>
