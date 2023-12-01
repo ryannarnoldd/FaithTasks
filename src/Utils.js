@@ -66,14 +66,6 @@ export const getVerse = (verse) => {
     return [verseText, verseLink]
 }
 
-export const getRandomQuestion = () => {
-    const questions = [
-        "slay"
-    ]
-
-    return questions[Math.floor(Math.random() * questions.length)];
-}
-
 export const getStreak = () => {
     const dates = JSON.parse(localStorage.getItem("dates")) || {};
     const keys = Object.keys(dates).sort().reverse();

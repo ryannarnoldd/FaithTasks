@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from 'react';
-import { getDateString, getVerse, getRandomQuestion } from '../Utils.js';
+import { getDateString, getVerse } from '../Utils.js';
 import '../style.scss';
 
 function getTotalData(date, complete, notes) {
@@ -59,7 +59,7 @@ const Task = ({ date, task: { title, verse, question }}) => {
       <button id="share" onClick={ copyToClipboard }>Share!</button>
       <button id="complete" value="false" onClick={ updateComplete } style={{marginTop: '0.5em', backgroundColor: (complete ? 'green' : '#aa0000')}}>{complete ? "Complete" : "Incomplete"}</button>
 
-      <textarea id="notes" placeholder={ question || getRandomQuestion() } value={ notes } onChange={(e) => setNotes(e.target.value)}></textarea>
+      <textarea id="notes" placeholder={ question } value={ notes } onChange={(e) => setNotes(e.target.value)}></textarea>
       
     </div>
   );
