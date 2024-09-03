@@ -1,62 +1,67 @@
 {
-    "2023-11-21": {
+    "2024-08-29": {
         "title": "Share a Bible verse on social media and discuss its relevance.",
         "verse": "Hebrews 4:12",
         "question": "How did the verse resonate with your online community?"
     },
-    "2023-11-22": {
+    "2024-08-30": {
         "title": "Read a Psalm and use it as a basis for your prayer time.",
         "verse": "Psalms 27:1",
         "question": "What aspects of God's character are highlighted in the Psalm, and how can you apply them in your prayers?"
     },
-    "2023-11-23": {
+    "2024-08-31": {
         "title": "Create a gratitude list inspired by verses from the Psalms.",
         "verse": "Psalms 100:4",
         "question": "What specific blessings can you thank God for today?"
     },
-    "2023-11-24": {
+    "2024-09-01": {
         "title": "Explore a passage from the Gospels and reflect on Jesus' teachings.",
         "verse": "Matthew 5:3-12",
         "question": "How can you embody the qualities mentioned in the Beatitudes?"
     },
-    "2023-11-25": {
+    "2024-09-02": {
         "title": "Study a parable from the New Testament and apply its lessons.",
         "verse": "Luke 15:11-32",
         "question": "What lessons can you draw from the Prodigal Son story and implement in your life?"
     },
-    "2023-11-26": {
+    "2024-09-03": {
         "title": "Memorize a verse from the Book of Romans and meditate on its meaning.",
         "verse": "Romans 8:28",
         "question": "How can the assurance of God working all things for good impact your mindset?"
     },
-    "2023-11-27": {
+    "2024-09-04": {
         "title": "Choose a verse from the Epistles and apply it in a real-life situation.",
         "verse": "Philippians 4:13",
         "question": "How can you rely on Christ's strength in a specific challenge you are facing?"
     },
-    "2023-11-28": {
+    "2024-09-05": {
         "title": "Share a Bible verse with a friend and discuss its impact on your lives.",
         "verse": "Proverbs 27:17",
         "question": "How does the verse inspire positive change and growth in your friendship?"
     },
-    "2023-11-29": {
+    "2024-09-06": {
         "title": "Explore a prophetic passage from the Old Testament and reflect on its relevance today.",
         "verse": "Isaiah 40:31",
         "question": "How does the promise of renewed strength encourage you in your current circumstances?"
     },
-    "2023-11-30": {
+    "2024-09-07": {
         "title": "Create a vision board for your spiritual goals using verses from the New Testament.",
         "verse": "Philippians 3:13-14",
         "question": "How can these verses guide your vision and goals for the future?"
     },
-    "2023-12-01": {
+    "2024-09-08": {
         "title": "Send an uplifting message to a friend or family member.",
         "verse": "Proverbs 16:24",
         "question": "How can your words bring joy and encouragement to someone today?"
     },
-    "2023-12-02": {
+    "2024-09-09": {
         "title": "Take a short walk in nature and spend a few moments in quiet reflection.",
         "verse": "Psalm 19:1",
         "question": "What aspects of nature remind you of God's beauty and creativity?"
+    },
+    "2024-09-10": {
+        "title": "Reflect on a recent sermon or teaching you heard.",
+        "verse": "James 1:22",
+        "question": "How can you be a doer of the word and not just a hearer?"
     }
 }

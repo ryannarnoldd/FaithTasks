@@ -31,12 +31,12 @@ const Task = ({ date, task: { title, verse, question }}) => {
   }, [date, complete, notes]);
 
   function copyToClipboard() {
-    navigator.clipboard.writeText(dateString + "\n" + title + "\n\nCheck it out here! " + window.location.href);
-    console.log( document.getElementById("share").style.background_color );
+    navigator.clipboard.writeText(`${dateString}\n${title}\n\nCheck it out here! ${window.location.origin}/${date}`);
 
-    document.getElementById("share").innerHTML = "Copied";
-    setTimeout(function() { document.getElementById("share").innerHTML = "Share!"; }, 1000);
+    document.getElementById("share").innerHTML = "Copied!";
+    setTimeout(function() { document.getElementById("share").innerHTML = "Share &#x1F4CB"; }, 1250);
   }
+
   function updateComplete() {
     setComplete(!complete);
     document.getElementById("complete").innerHTML = complete ? "Incomplete" : "Complete";
@@ -56,7 +56,7 @@ const Task = ({ date, task: { title, verse, question }}) => {
       
       <h2><a id="verse" href={verseLink} target="_blank" rel="noreferrer">{verseText}</a></h2> 
       
-      <button id="share" onClick={ copyToClipboard }>Share!</button>
+      <button id="share" onClick={ copyToClipboard }>Share &#x1F4CB;</button>
       <button id="complete" value="false" onClick={ updateComplete } style={{marginTop: '0.5em', backgroundColor: (complete ? 'green' : '#aa0000')}}>{complete ? "Complete" : "Incomplete"}</button>
 
       <textarea id="notes" placeholder={ question } value={ notes } onChange={(e) => setNotes(e.target.value)}></textarea>
