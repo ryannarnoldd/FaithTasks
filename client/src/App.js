@@ -4,11 +4,11 @@ import {
   Routes,
 } from 'react-router-dom';
 
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar.tsx';
 
 import Home from './pages/Home';
-import Search from './pages/Search';
-import About from './pages/About';
+import Search from './pages/archive/Search';
+import About from './pages/archive/About';
 import You from './pages/You';
 
 function App() {

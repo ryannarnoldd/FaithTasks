@@ -1,36 +1,39 @@
-import {
-    Container,
-    Button
-} from 'react-bootstrap';
-
-import { useQuery } from "@apollo/client";
-import { QUERY_ME } from "../utils/queries.js";
-
+import { useEffect, useState } from 'react';
 
 const Profile = () => {
-    const { data } = useQuery(QUERY_ME);
+    const [translation, setTranslation] = useState(localStorage.getItem("translation") || 114);
 
-    // Maps through the prices to create an array of prices, then sums them it together.
-    function sumPrices(data: any) {
-        let total = 0;
+    const translations = {
+        1: "KJV",
+        59: "ESV",
+        111: "NIV",
+        114: "NKJV",
+        116: "NLT"
+    }
 
-        const prices = data?.me.collections.map((collection: { items: any[]; }) => collection.items.map(item => item.price)).flat();
-        prices?.forEach((price: number) => total += price); // Sum all prices using a loop
-        return total;
-      }
+    useEffect(() => {
+        localStorage.setItem("translation", translations[1]);
+    }, [translation]);   
 
     return (
-        <Container className="text-center mt-5">
-            <h1>Profile Statistics</h1>
-            <h2>Total Collections: {data?.me?.collections?.length}</h2>
-            <h2>Total Items: {data?.me?.collections?.reduce((total: number, collection: any) => total + collection.items.length, 0)}</h2>
-            <h2>Total Value: ${sumPrices(data)}</h2>
+        <div className='you'>
+        <label>Select a translation:
+            <select name="translation" id="translation" value={ 0 } onChange={(e) => setTranslation(e.target.value)}>
+                <option value="59">English Standard Version</option>
+                <option value="1">King James Version</option>
+                <option value="114">New King James Version</option>
+                <option value="111">New International Version</option>
+                <option value="116">New Living Translation</option>
+                <option value="97">The Message</option>
+            </select>
+        </label>
 
-            <Button variant="danger" onClick={() => {
-                localStorage.removeItem('id_token');
-                window.location.assign('/login');
-            }}>Logout</Button>
-        </Container>
+        <br /> <br />
+
+        <h1 id="streak">Streak: { 0 }</h1>
+        <br /> <br />
+
+    </div>
     );
 };
 

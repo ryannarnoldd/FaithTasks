@@ -1,32 +1,20 @@
-import { Link, useLocation } from 'react-router-dom';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import '../style.scss';
 
-const AppNavbar = () => {
-  const location = useLocation();
+// import { fetchRandomTask } from '..utils/Utils.js';
+
+const Navbar = () => {
+  // const { date } = fetchRandomTask();
 
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
-      <Container>
-        <Navbar.Brand as={Link} to="/"> Trackd </Navbar.Brand>
-        <Nav>
-
-          {/* If not logged in, it will only show signup and login. */}
-          {location.pathname === '/signup' || location.pathname === '/login' ? (
-            <>
-              <Nav.Link as={Link} to="/signup">Sign Up</Nav.Link>
-              <Nav.Link as={Link} to="/login">Login</Nav.Link>
-            </>
-          ) : location.pathname === '/profile' ? (
-            <Nav.Link as={Link} to="/">Home</Nav.Link>
-          ) : (
-            <Nav.Link as={Link} to="/profile">My Profile</Nav.Link>
-          )}
-
-        </Nav>
-      </Container>
-    </Navbar>
-
+    <nav>
+      <a href="/">Faith Tasks</a>
+      <div className="links">
+        <a href={"12-31-25"}>Random</a>
+        <a href="about">About</a>
+        <a href="you">You</a>
+      </div>
+    </nav>
   );
 };
 
-export default AppNavbar;
+export default Navbar;

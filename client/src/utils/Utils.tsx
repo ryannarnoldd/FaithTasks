@@ -1,3 +1,4 @@
+// @ts-nocheck
 // import tasks from './data/tasks.json';
 import history from './data/history.json';
 
