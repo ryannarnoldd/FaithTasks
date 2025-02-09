@@ -1,7 +1,7 @@
 import React from 'react';
 import '../style.scss';
 import { fetchDailyTask } from '../Utils.js';
-import Task from '../components/Task';
+import Task from '../components/Task.js';
 const { date, task } = fetchDailyTask();
 
 const Home = () => {
