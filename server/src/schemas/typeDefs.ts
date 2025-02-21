@@ -8,6 +8,13 @@ const typeDefs = gql`
     collections: [Collection]
   }
 
+  type Task {
+    _id: ID!
+    title: String!
+    question: String
+    verse: String
+  }
+
   type Collection {
     _id: ID!
     title: String!
@@ -32,11 +39,15 @@ const typeDefs = gql`
 
   type Query {
     me: User!
+
   }
 
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
+
+    createTask(title: String!, question: String, verse: String): Task!
+
     createCollection(title: String!, description: String, image: String): Collection!
     deleteCollection(collectionId: ID!): Collection!
     deleteItem(collectionId: ID!, itemId: ID!): Collection!
@@ -45,3 +56,5 @@ const typeDefs = gql`
 `;
 
 export default typeDefs;
+
+//     getTasks: [Task]

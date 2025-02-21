@@ -2,6 +2,7 @@ import User from "../models/User.js";
 import Collection  from "../models/Collection.js";
 import Item  from "../models/Item.js";
 import { signToken, AuthenticationError } from '../services/auth-service.js';
+import Task from "../models/Task.js";
 
 const resolvers = {
   Query: {
@@ -18,6 +19,13 @@ const resolvers = {
   },
 
   Mutation: {
+    createTask: async (_parent: any, { title, question, verse }: { title: string; question: string; verse: string }, context: any) => {
+      // if (!context.user) { throw new AuthenticationError('User not authenticated3'); }
+    
+      try { return await Task.create({ title, question, verse }); } 
+      catch (error) { throw new Error('Failed to create task'); }
+    },
+
     // make a new collection
     createCollection: async (_parent: any, { title, description, image }: { title: string; description: string; image: string }, context: any) => {
       if (!context.user) {

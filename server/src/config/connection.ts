@@ -4,7 +4,7 @@ dotenv.config();
 import mongoose from 'mongoose';
 
 // (Localhost)
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/trackd');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/FaithTasks');
 
 const db = mongoose.connection;
 
