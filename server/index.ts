@@ -3,8 +3,8 @@ import express from "express";
 import { graphqlHTTP } from "express-graphql";
 import mongoose from "mongoose";
 import cors from "cors";
-import schema from "./schema";
-import authMiddleware from "./auth";
+import schema from "./schema.js";
+import authMiddleware from "./auth.js";
 
 const app = express();
 app.use(cors());

@@ -15,7 +15,11 @@ const resolvers = {
         return user;
       }
       throw new AuthenticationError('User! not authenticated3');
-    },  
+    },
+
+    getTasks: async (_parent: any, _args: any, _context: any) => {
+      return await Task.findById({});
+    },
   },
 
   Mutation: {

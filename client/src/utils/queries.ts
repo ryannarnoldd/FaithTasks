@@ -21,4 +21,15 @@ export const QUERY_ME = gql`
   }
 `;
 
+export const ALL_TASKS = gql`
+  query GetTasks {
+    getTasks {
+      _id
+      title
+      question
+      verse
+    }
+  }
+`;
+
 // Future to maybe adds more specific queries for collections and items.

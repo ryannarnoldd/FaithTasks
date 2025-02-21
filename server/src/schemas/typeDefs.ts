@@ -40,6 +40,8 @@ const typeDefs = gql`
   type Query {
     me: User!
 
+    getTasks: [Task]
+
   }
 
   type Mutation {
