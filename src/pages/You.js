@@ -28,12 +28,6 @@ const You = () => {
         <h1 id="streak">Streak: { getStreak() }</h1>
         <br /> <br />
 
-
-
-        
-
-
-
     </div>
   );
 };
