@@ -16,6 +16,4 @@ In addition to the daily tasks, we also offer a collection of resources to help 
 
 ## Join our community
 
-We have a Discord server where you can join and connect with other believers, share your thoughts and experiences, and receive encouragement and support.
-
 We hope that FaithTasks will be a valuable tool in your faith journey. Thank you for visiting our website!
