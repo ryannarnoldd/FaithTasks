@@ -6,14 +6,6 @@ import { getStreak } from '../Utils';
 const You = () => {
     const [translation, setTranslation] = useState(localStorage.getItem("translation") || 114);
 
-    // const translations = {
-    //     1: "KJV",
-    //     59: "ESV",
-    //     111: "NIV",
-    //     114: "NKJV",
-    //     116: "NLT"
-    // }
-
     useEffect(() => {
         localStorage.setItem("translation", translation);
     }, [translation]);    
